@@ -1,0 +1,25 @@
+<?xml version="1.0"?> 
+  <RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+              xmlns:chrome="http://www.mozilla.org/rdf/chrome#"> 
+
+    <RDF:Seq about="urn:mozilla:package:root"> 
+      <RDF:li resource="urn:mozilla:package:threadkey"/> 
+    </RDF:Seq> 
+
+    <RDF:Description RDF:about="urn:mozilla:package:threadkey" 
+	  chrome:displayName="Mozilla Thunderbird ThreadKey Extension" 
+          chrome:author="Luca Porzio" 
+          chrome:name="threadkey"
+          chrome:extension="true"
+          chrome:description="Strike the 'T' key and get the thread view."> 
+    </RDF:Description>
+
+    <RDF:Seq about="urn:mozilla:overlays">
+      <RDF:li resource="chrome://messenger/content/mailWindowOverlay.xul"/>
+    </RDF:Seq>
+
+    <RDF:Seq about="chrome://messenger/content/mailWindowOverlay.xul">
+      <RDF:li>chrome://threadkey/content/mailWindowOverlayThreadKey.xul</RDF:li>
+    </RDF:Seq>
+
+  </RDF:RDF>

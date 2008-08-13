@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<overlay id="mailWindowOverlayThreadKey" 
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<!-- Key Customize -->
+<keyset id="mailKeys">
+  <key id="key_nextUnreadThread"  key="t" modifiers="shift"/>
+  <key key="t" oncommand="MsgSortThreaded()" modifiers=""/>
+</keyset>
+
+</overlay>
