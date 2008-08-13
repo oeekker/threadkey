@@ -1,0 +1,11 @@
+#content  threadkey	            jar:chrome/threadkey.jar!/content/threadkey/
+#locale   threadkey en-US       jar:chrome/threadkey.jar!/locale/en-US/
+#locale   threadkey nl          jar:chrome/threadkey.jar!/locale/nl/
+#skin     threadkey classic/1.0 jar:chrome/threadkey.jar!/skin/classic/
+
+content	 threadkey	           chrome/content/threadkey/
+locale   threadkey en-US       chrome/locale/en-US/
+locale   threadkey nl          chrome/locale/nl/
+skin     threadkey classic/1.0 chrome/skin/classic/
+
+overlay  chrome://messenger/content/mailWindowOverlay.xul chrome://threadkey/content/mailWindowOverlayThreadKey.xul
