@@ -1,0 +1,17 @@
+<!-- key_threadSort -->
+<!ENTITY threadSortCmd.key                      "T">
+<!ENTITY threadSortCmd.modifiers                "">
+
+<!-- key_unthreadSort -->
+<!ENTITY unthreadSortCmd.key                    "U">
+<!ENTITY unthreadSortCmd.modifiers              "">
+
+<!-- Keys that need to be reassigned -->
+<!ENTITY threadkeyOverrideKey1.id               "key_nextUnreadThread">
+<!ENTITY threadkeyOverrideKey1.key              "T">
+<!ENTITY threadkeyOverrideKey1.modifiers        "shift">
+
+<!-- dummy id key_threadSort or key_unthreadSort -->
+<!ENTITY threadkeyOverrideKey2.id               "key_unthreadSort">
+<!ENTITY threadkeyOverrideKey2.key              "U">
+<!ENTITY threadkeyOverrideKey2.modifiers        "">
