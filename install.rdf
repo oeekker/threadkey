@@ -4,16 +4,17 @@
   <Description about="urn:mozilla:install-manifest">
     <!--<em:id>ThreadKey@LucaPorzio.tdl</em:id>-->
     <em:id>{1a2d9681-ba56-11da-959b-00e08161165f}</em:id>
-    <em:version>0.1</em:version>
+    <em:version>0.3</em:version>
     <em:name>ThreadKey</em:name>
-    <em:description>Strike the 'T' key and get the thread view.</em:description>
+    <em:description>Strike the 'T' key and get the thread view, strike the 'U' key and get back the unthread view</em:description>
     <em:creator>Luca Porzio</em:creator>
+    <em:contributor>Stefano Costantini</em:contributor>
+    <em:iconURL>chrome://threadkey/content/icon.png</em:iconURL>
     <!--
     <em:type>2</em>
     <em:homepageURL>http://</em:homepageURL>
     <em:updateURL>http://</em:updateURL>
     <em:optionsURL>chrome://threadkey/content/setting.xul</em:optionsURL>
-    <em:iconURL>chrome://threadkey/skin/threadkey.png</em:iconURL>
     <em:aboutURL>chrome://threadkey/content/about.xul</em:aboutURL>
     -->
 
@@ -28,7 +29,7 @@
       <!--Thunderbird-->
         <em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id>
         <em:minVersion>1.5</em:minVersion>
-        <em:maxVersion>1.5</em:maxVersion>
+        <em:maxVersion>1.5.0.*</em:maxVersion>
       </Description>
     </em:targetApplication>
   </Description>

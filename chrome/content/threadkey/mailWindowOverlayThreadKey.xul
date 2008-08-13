@@ -7,6 +7,7 @@
 <keyset id="mailKeys">
   <key id="key_nextUnreadThread"  key="t" modifiers="shift"/>
   <key key="t" oncommand="MsgSortThreaded()" modifiers=""/>
+  <key key="u" oncommand="MsgSortUnthreaded()" modifiers=""/>
 </keyset>
 
 </overlay>

@@ -11,7 +11,7 @@
           chrome:author="Luca Porzio" 
           chrome:name="threadkey"
           chrome:extension="true"
-          chrome:description="Strike the 'T' key and get the thread view."> 
+          chrome:description="Strike the 'T' key and get the thread view, strike the 'U' key and get back the unthread view."> 
     </RDF:Description>
 
     <RDF:Seq about="urn:mozilla:overlays">
