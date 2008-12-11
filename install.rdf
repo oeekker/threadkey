@@ -7,7 +7,7 @@
                    em:id="{1a2d9681-ba56-11da-959b-00e08161165f}"
                    em:version="0.5"
                    em:name="ThreadKey"
-                   em:description="Strike the 'T' key to sort messages by thread, strike the 'U' key to sort unthreaded again"
+                   em:description="Strike the 'T' key to sort messages by thread, strike the 'U' key to sort unthreaded again, just like the 'G' key switches to grouped by sort view"
                    em:creator="Luca Porzio"
                    em:contributor="Stefano Constantini"
                    em:developer="Onno Ekker"
