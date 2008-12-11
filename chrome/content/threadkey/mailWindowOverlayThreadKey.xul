@@ -59,6 +59,10 @@
       key="&unthreadSortCmd.key;"
       modifiers="&threadSortCmd.modifiers;"
       oncommand="MsgSortUnthreaded()"/>
+    <key id="key_groupBySort"
+      key="&groupBySortCmd.key;"
+      modifiers="&groupBySortCmd.modifiers;"
+      oncommand="MsgGroupBySort()"/>
   </keyset>
 
   <!-- Override keys/modifiers for existing keys that have just become ambiguous -->
@@ -68,11 +72,16 @@
   <key id="&threadkeyOverrideKey2.id;"
     key="&threadkeyOverrideKey2.key;"
     modifiers="&threadkeyOverrideKey2.modifiers;"/>
+  <key id="&threadkeyOverrideKey3.id;"
+    key="&threadkeyOverrideKey3.key;"
+    modifiers="&threadkeyOverrideKey3.modifiers;"/>
 
   <!-- Add newly defined key attributes to existing menuitems -->
   <menuitem id="sortThreaded"
     key="key_threadSort"/>
   <menuitem id="sortUnthreaded"
     key="key_unthreadSort"/>
+  <menuitem id="groupBySort"
+    key="key_groupBySort"/>
 
 </overlay>
