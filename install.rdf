@@ -5,18 +5,20 @@
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:type="2"
                    em:id="{1a2d9681-ba56-11da-959b-00e08161165f}"
-                   em:version="0.4"
+                   em:version="0.5"
                    em:name="ThreadKey"
                    em:description="Strike the 'T' key to sort messages by thread, strike the 'U' key to sort unthreaded again"
                    em:creator="Luca Porzio"
+                   em:contributor="Stefano Constantini"
+                   em:developer="Onno Ekker"
                    em:homepageURL="http://threadkey.mozdev.org"
-                   em:iconURL="chrome://threadkey/skin/ThreadKey.png">
-    <em:contributor>Stefano Constantini</em:contributor>
-    <em:contributor>Onno Ekker</em:contributor>
+                   em:iconURL="chrome://threadkey/skin/ThreadKey.png"
+                   em:updateURL="http://threadkey.mozdev.org/update.rdf"
+                   em:optionsURL="chrome://threadkey/content/threadKeyOptions.xul">
     <em:targetApplication RDF:resource="rdf:#thunderbird"/>
   </RDF:Description>
   <RDF:Description RDF:about="rdf:#thunderbird"
                    em:id="{3550f703-e582-4d05-9a08-453d09bdfdc6}"
-                   em:minVersion="1.5"
-                   em:maxVersion="2.0.0.*" />
+                   em:minVersion="2.0"
+                   em:maxVersion="3.0b1" />
 </RDF:RDF>
