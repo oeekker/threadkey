@@ -57,7 +57,7 @@
       oncommand="MsgSortThreaded()"/>
     <key id="key_unthreadSort"
       key="&unthreadSortCmd.key;"
-      modifiers="&threadSortCmd.modifiers;"
+      modifiers="&unthreadSortCmd.modifiers;"
       oncommand="MsgSortUnthreaded()"/>
     <key id="key_groupBySort"
       key="&groupBySortCmd.key;"
