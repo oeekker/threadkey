@@ -13,6 +13,9 @@
                    em:developer="Onno Ekker"
                    em:homepageURL="http://threadkey.mozdev.org"
                    em:iconURL="chrome://threadkey/skin/ThreadKey.png">
+    <em:translator>Anton Pinsky (de &amp; ru)</em:translator>
+    <em:translator>Mikael Hiort af Ornäs (sv-SE)</em:translator>
+    <em:translator>Wang.H.K (zh-CN)</em:translator>
     <em:targetApplication>
       <rdf:Description rdf:about="rdf:#thunderbird"
                        em:id="{3550f703-e582-4d05-9a08-453d09bdfdc6}"
