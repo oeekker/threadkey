@@ -1,0 +1,44 @@
+<!--
+  Note to translators:
+  Before changing the key, please check if it's customary to change keyboard
+  shortcuts, for example by comparing the following items and see if they
+  make sense in your locale:
+
+    View    → Sort By      → Grouped By Sort  G
+    Go      → Next         → Unread Thread    T
+    Message → New Message  Ctrl+N
+              Reply        Ctrl+R
+
+  If they are unchanged, please leave the key following keyboard shortcuts
+  also unchanged.
+
+  If no key needs to be overridden, use id key_threadSort and/or
+  key_unthreadSort with values from above, to prevent bogus keys in DOM
+-->
+
+<!-- key_threadSort -->
+<!ENTITY threadSortCmd.key                      "T">
+<!ENTITY threadSortCmd.modifiers                "">
+
+<!-- key_unthreadSort -->
+<!ENTITY unthreadSortCmd.key                    "U">
+<!ENTITY unthreadSortCmd.modifiers              "">
+
+<!-- key_groupBySort -->
+<!ENTITY groupBySortCmd.key                     "G">
+<!ENTITY groupBySortCmd.modifiers               "">
+
+<!-- Keys that need to be reassigned -->
+<!ENTITY threadkeyOverrideKey1.id               "key_nextUnreadThread">
+<!ENTITY threadkeyOverrideKey1.key              "T">
+<!ENTITY threadkeyOverrideKey1.modifiers        "shift">
+
+<!-- dummy id key_threadSort or key_unthreadSort -->
+<!ENTITY threadkeyOverrideKey2.id               "key_threadSort">
+<!ENTITY threadkeyOverrideKey2.key              "T">
+<!ENTITY threadkeyOverrideKey2.modifiers        "">
+
+<!-- dummy id key_threadSort or key_unthreadSort -->
+<!ENTITY threadkeyOverrideKey3.id               "key_threadSort">
+<!ENTITY threadkeyOverrideKey3.key              "T">
+<!ENTITY threadkeyOverrideKey3.modifiers        "">

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<HTML>
+  <HEAD>
+    <TITLE>ThreadKey</TITLE>
+    <META charset="UTF-8">
+    <STYLE>
+      th, td { vertical-align: top }
+      p, ul { margin-top: 0px }
+    </STYLE>
+  </HEAD>
+  <BODY>
+    <H1>ThreadKey</H1>
+    <H2>Allmän information</H2>
+    <TABLE>
+      <TR>
+        <TH>Namn</TH>
+        <TD>ThreadKey</TD>
+      </TR>
+      <TR>
+        <TH>Sammanfattning</TH>
+        <TD>Tryck ned T-tangenten för att sortera meddelanden efter tråd, tryck ned U-tangenten för att sortera dem otrådade/ogrupperade igen.</TD>
+      </TR>
+    </TABLE>
+    <H2>Tilläggsinformation</H2>
+    <TABLE>
+      <TR>
+        <TH>Beskrivning</TH>
+        <TD>
+          <P>Det här är ett mycket enkelt tillägg, som låter användaren trycka ned T-tangenten för att växla till vyn Trådade meddelanden, precis som G-tangenten växlar till vyn Grupperade efter ordning. För att gå tillbaka till vyn Otrådade meddelanden kan du trycka ned U-tangenten.</P>
+          <P>Även om du inte använder trådningsvyn särskilt ofta, så kan tillägget komma väl till pass om du av misstag trycker ned G. ThreadKey hjälper dig att växla tillbaka till trådade eller otrådade/ogrupperade meddelanden med en snabb och enkel knapptryckning.</P>
+          <P>Thunderbirdbuggen <A href="https://bugzilla.mozilla.org/show_bug.cgi?id=275871" title="VERIFIED FIXED &ndash; View->Sort By->Grouped by Sort keyboard shortcut goes against interface guidelines (back out bug 263919)">nr.&nbsp;275871</A> har "åtgärdats", vilket betyder att G-tangenten inte längre växlar Thunderbird till vyn Grupperade efter ordning. Jag har släppt <a href="https://addons.mozilla.org/thunderbird/addon/threadkey/versions/0.5">version 0.5</a>, så att de som använder mitt tillägg även i fortsättningen kan växla till Grupperade efter ordning via G-tangenten …</P>
+          <P>Observera att T-tangenten för närvarande har tilldelats menyobjektet Gå till &gt; Nästa &gt; Olästa tråd: denna tangenttilldelning kommer att ersättas av Skift+T.</P>
+        </TD>
+      </TR>
+    </TABLE>
+    <H2>Teknisk information</H2>
+    <TABLE>
+      <TR>
+        <TH>Utvecklarens kommentarer</TH>
+        <TD>
+          <P>Det finns ett känt fel med detta tillägg i Thunderbird 2.* på Mac OS X. Omdefinitionen av T/U inaktiverar T/U i hela Thunderbird. Det finns en tillfällig version med de alternativa kortkommandona Cmd+T/Cmd+U för Mac, vilken kan hämtas under "See complete version history" och på ThreadKeys webbplats …</P>
+        </TD>
+      </TR>
+    </TABLE>
+    <H2>Versionsinformation</H2>
+    <TABLE>
+      <TR>
+        <TH>Version 0.7</TH>
+        <TD>
+          <UL>
+            <LI>Åtgärdade fel med låstangenterna, som påverkade visning av Otrådad sortering</LI>
+          </UL>
+        </TD>
+      </TR> 
+      <TR>
+        <TH>Version 0.6</TH>
+        <TD>Lade till SeaMonkey bland de program som stöds.</TD>
+      </TR>
+    </TABLE>
+  </BODY>
+</HTML>
