@@ -2,6 +2,7 @@ content	 threadkey	 chrome/content/threadkey/
 
 locale   threadkey  en-US  chrome/locale/en-US/
 locale   threadkey  de     chrome/locale/de/
+locale   threadkey  fr     chrome/locale/fr/
 locale   threadkey  nl     chrome/locale/nl/
 locale   threadkey  ru     chrome/locale/ru/
 locale   threadkey  sv-SE  chrome/locale/sv-SE/
