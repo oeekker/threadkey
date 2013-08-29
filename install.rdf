@@ -11,7 +11,7 @@
                    em:creator="Luca Porzio"
                    em:contributor="Stefano Constantini"
                    em:developer="Onno Ekker"
-                   em:homepageURL="http://threadkey.mozdev.org"
+                   em:homepageURL="http://threadkey.sourceforge.net"
                    em:iconURL="chrome://threadkey/skin/ThreadKey.png">
     <em:translator>Anton Pinsky (de &amp; ru)</em:translator>
     <em:translator>Goofy (fr)</em:translator>
@@ -22,13 +22,13 @@
       <rdf:Description rdf:about="rdf:#thunderbird"
                        em:id="{3550f703-e582-4d05-9a08-453d09bdfdc6}"
                        em:minVersion="2.0"
-                       em:maxVersion="21.0a2" />
+                       em:maxVersion="25.0a2" />
     </em:targetApplication>
     <em:targetApplication>
       <rdf:Description rdf:about="rdf:#seamonkey"
                        em:id="{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}"
                        em:minVersion="2.0"
-                       em:maxVersion="2.17a2" />
+                       em:maxVersion="2.22a2" />
     </em:targetApplication>
   </rdf:Description>
 </rdf:RDF>
