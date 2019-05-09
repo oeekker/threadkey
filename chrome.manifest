@@ -1,14 +1,10 @@
-content	 threadkey	 chrome/content/threadkey/
+content threadkey chrome/
 
-locale   threadkey  en-US  chrome/locale/en-US/
-locale   threadkey  de     chrome/locale/de/
-locale   threadkey  fr     chrome/locale/fr/
-locale   threadkey  nl     chrome/locale/nl/
-locale   threadkey  ru     chrome/locale/ru/
-locale   threadkey  sr     chrome/locale/sr/
-locale   threadkey  sv-SE  chrome/locale/sv-SE/
-locale   threadkey  zh-CN  chrome/locale/zh-CN/
-
-skin     threadkey classic/1.0 chrome/skin/classic/
-
-overlay  chrome://messenger/content/mailWindowOverlay.xul chrome://threadkey/content/mailWindowOverlayThreadKey.xul
+locale threadkey en-US chrome/locale/en-US/
+locale threadkey de    chrome/locale/de/
+locale threadkey fr    chrome/locale/fr/
+locale threadkey nl    chrome/locale/nl/
+locale threadkey ru    chrome/locale/ru/
+locale threadkey sr    chrome/locale/sr/
+locale threadkey sv-SE chrome/locale/sv-SE/
+locale threadkey zh-CN chrome/locale/zh-CN/
