@@ -1,5 +1,3 @@
-content threadkey chrome/
-
 locale threadkey en-US chrome/locale/en-US/
 locale threadkey de    chrome/locale/de/
 locale threadkey fr    chrome/locale/fr/
