@@ -5,9 +5,9 @@
     <em:id>{1a2d9681-ba56-11da-959b-00e08161165f}</em:id>
     <em:type>2</em:type>
     <em:name>ThreadKey</em:name>
-    <em:version>1.1</em:version>
+    <em:version>1.2</em:version>
     <em:bootstrap>true</em:bootstrap>
-    <em:description>Strike the 'T' key to sort messages by thread, strike the 'U' key to sort unthreaded again, just like the 'G' key switches to Grouped By Sort view</em:description>
+    <em:description>Strike the 'T' key to sort messages by thread, strike the 'U' key to sort unthreaded again, just like the 'G' key switches to Grouped By Sort view.</em:description>
     <em:homepageURL>https://threadkey.sourceforge.io</em:homepageURL>
     <em:creator>Onno Ekker</em:creator>
     <em:developer>Luca Porzio</em:developer>
