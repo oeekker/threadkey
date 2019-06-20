@@ -9,7 +9,7 @@
  * the Initial Deveoper. All Rights Reserved.
  *
  * Contributors:
- * Stefano Constantini, Onno Ekker
+ * Stefano Constantini, Onno Ekker, John Bieling
  */
 
 "use strict";
@@ -45,6 +45,12 @@ function install(data, reason) {}
 function uninstall(data, reason) {}
 
 function startup(data, reason) {
+  try {
+    if (Services.prefs.getBoolPref("extensions.threadkey.debug")) {
+      debug_threadkey = true;
+    }
+  } catch(ex) {}
+
   if (debug_threadkey) {
     if (typeof Log !== "undefined") {
       logger = Log.repository.getLogger(LOGGER_ID);
@@ -86,6 +92,7 @@ function initThreadkey() {
   getStringFromBundle("overrideKey1", "id key modifiers");
   getStringFromBundle("overrideKey2", "id key modifiers");
   getStringFromBundle("overrideKey3", "id key modifiers");
+  log("init ready");
 }
 
 function getStringFromBundle(obj, attrs) {
@@ -131,9 +138,24 @@ var WindowListener = {
   onCloseWindow: function(xulWindow) { }
 }
 
-function loadIntoWindow(caller, window) {
+function windowIsReady(window) {
+  return new Promise(function(resolve) {
+    if (window.document.readyState !== "complete") {
+      // If the window isn't completely loaded, add an event listener and resolve this Promise
+      // as soon as the load event has fired.
+      window.addEventListener("load", resolve, { once: true });
+    } else {
+      // The window is  completely loaded, so we can resolve the Promise immediately.
+      return resolve();
+    }
+  });
+}
+
+async function loadIntoWindow(caller, window) {
   let doc = window.document;
-  log(caller+" loadintowindow "+doc.documentElement.id);
+  log(caller+" loadintowindow "+doc.documentElement.id+" "+doc.readyState);
+  await windowIsReady(window);
+  log(caller+" loadintowindow "+doc.documentElement.id+" loading "+doc.readyState);
 
   if (my_threadkey.overrideKey1.id !== "") {
     saveOriginalAttributes(doc, my_threadkey.overrideKey1.id, "originalKey1", "id key modifiers command oncommand");

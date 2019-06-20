@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{1a2d9681-ba56-11da-959b-00e08161165f}",
+      "strict_min_version": "68.0"
+    }
+  },
+  "name": "__MSG_extensionName__",
+  "description": "__MSG_extensionDescription__",
+  "author": "Onno Ekker",
+  "version": "1.3",
+  "legacy": {
+    "type": "bootstrap"
+  },
+  "homepage_url": "https://threadkey.sourceforge.io/",
+  "default_locale": "en",
+  "icons": {
+    "32": "icon.png"
+  }
+}

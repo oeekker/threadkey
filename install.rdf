@@ -5,7 +5,7 @@
     <em:id>{1a2d9681-ba56-11da-959b-00e08161165f}</em:id>
     <em:type>2</em:type>
     <em:name>ThreadKey</em:name>
-    <em:version>1.2</em:version>
+    <em:version>1.3</em:version>
     <em:bootstrap>true</em:bootstrap>
     <em:description>Strike the 'T' key to sort messages by thread, strike the 'U' key to sort unthreaded again, just like the 'G' key switches to Grouped By Sort view.</em:description>
     <em:homepageURL>https://threadkey.sourceforge.io</em:homepageURL>
@@ -21,7 +21,7 @@
       <rdf:Description rdf:about="rdf:#thunderbird"
                        em:id="{3550f703-e582-4d05-9a08-453d09bdfdc6}"
                        em:minVersion="10.0"
-                       em:maxVersion="68.0a1" />
+                       em:maxVersion="69.*" />
     </em:targetApplication>
     <em:targetApplication>
       <rdf:Description rdf:about="rdf:#seamonkey"
