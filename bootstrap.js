@@ -258,7 +258,7 @@ function defineKey(doc, key, obj) {
     let schema = my_threadkey[obj];
     if (id === null) {
       log("create "+key);
-      id = doc.createElement("key");
+      id = (typeof doc.createXULElement === "function") ? doc.createXULElement("key") : doc.createElement("key");
       id.setAttribute("id", key);
       mailKeys.appendChild(id);
     } else {
