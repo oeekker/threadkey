@@ -14,6 +14,8 @@
 
 "use strict";
 
+const LOGGER_ID = "threadkey";
+
 var debug_threadkey = false;
 
 var Services, Log;
@@ -32,8 +34,6 @@ if (typeof ChromeUtils === "object" && typeof ChromeUtils.import === "function")
 
 var stringBundle = Services.strings.createBundle("chrome://threadkey/locale/threadkey.properties");
 var logger, logAppender;
-
-const LOGGER_ID = "threadkey";
 
 var my_threadkey = {
   threadSortCmd: { command: "", oncommand: "MsgSortThreaded()" },
@@ -153,9 +153,9 @@ function windowIsReady(window) {
 
 async function loadIntoWindow(caller, window) {
   let doc = window.document;
-  log(caller+" loadintowindow "+doc.documentElement.id+" "+doc.readyState);
+  log(caller+" loadintowindow "+doc.readyState);
   await windowIsReady(window);
-  log(caller+" loadintowindow "+doc.documentElement.id+" loading "+doc.readyState);
+  log(caller+" loadintowindow loading "+doc.readyState);
 
   if (my_threadkey.overrideKey1.id !== "") {
     saveOriginalAttributes(doc, my_threadkey.overrideKey1.id, "originalKey1", "id key modifiers command oncommand");
@@ -197,12 +197,12 @@ async function loadIntoWindow(caller, window) {
   setMenuitem(doc, "groupBySort", "key_groupBySort");
   setMenuitem(doc, "appmenu_groupBySort", "key_groupBySort");
 
-  log(caller+" loadintowindow "+doc.documentElement.id+" ready");
+  log(caller+" loadintowindow ready");
 }
 
 function unloadFromWindow(caller, window) {
   let doc = window.document;
-  log(caller+" unloadfromwindow "+doc.documentElement.id);
+  log(caller+" unloadfromwindow");
 
   setMenuitem(doc, "appmenu_sortThreaded", my_threadkey.sortThreaded.key);
   setMenuitem(doc, "sortThreaded", my_threadkey.sortThreaded.key);
@@ -231,7 +231,7 @@ function unloadFromWindow(caller, window) {
     removeAcceltexts(doc, my_threadkey.originalKey3.id);
   }
 
-  log(caller+" unloadfromwindow "+doc.documentElement.id+" ready");
+  log(caller+" unloadfromwindow ready");
 }
 
 function saveOriginalAttributes(doc, node, obj, attrs) {
